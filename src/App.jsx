@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import ProductGallery from "./componants/ProductGallery";
+import Footer from "./componants/Footer";
 import {
   BrowserRouter as Router,
   Route,
@@ -15,7 +16,9 @@ function App() {
       <Routes>
         <Route path="/" element={<ProductGallery/>}> </Route>
         <Route path="/Productdetails" element={<ProductDetails/>}> </Route>
+       
       </Routes>
+      <Footer/>
     </Router>
     // <div>
     //   <Header />
